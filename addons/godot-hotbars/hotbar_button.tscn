@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/godot-hotbars/base_button_01.png" type="Texture" id=1]
+[ext_resource path="res://addons/godot-hotbars/hover_button_02.png" type="Texture" id=2]
+[ext_resource path="res://addons/godot-hotbars/hotbar_button.gd" type="Script" id=3]
+
+[node name="button" type="TextureButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 1 )
+texture_hover = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+__meta__ = {
+"_edit_group_": true
+}
+hotbar_text = "1"
+
+[node name="label" type="Label" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 10.0
+margin_right = 32.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "0"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Rect" ]
+
+
