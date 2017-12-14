@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/godot-hotbars/new_styleboxflat.tres" type="StyleBox" id=1]
+[ext_resource path="res://addons/godot-hotbars/move_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/godot-hotbars/hotbar_button.tscn" type="PackedScene" id=3]
+
+[node name="horizontal_hotbar" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Panel" type="PanelContainer" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 372.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = ExtResource( 1 )
+_sections_unfolded = [ "Margin", "Rect", "custom_styles" ]
+
+[node name="buttons" type="GridContainer" parent="Panel"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 372.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/vseparation = 2
+custom_constants/hseparation = 2
+columns = 11
+_sections_unfolded = [ "Anchor", "Grow Direction", "Hint", "Margin", "Material", "Rect", "Size Flags", "Theme", "Visibility", "custom_constants" ]
+
+[node name="move_button2" parent="Panel/buttons" instance=ExtResource( 2 )]
+
+margin_right = 32.0
+margin_bottom = 32.0
+use_snap = false
+
+[node name="btn1" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 34.0
+margin_right = 66.0
+margin_bottom = 32.0
+
+[node name="btn2" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 68.0
+margin_right = 100.0
+margin_bottom = 32.0
+hotbar_text = "2"
+
+[node name="btn3" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 102.0
+margin_right = 134.0
+margin_bottom = 32.0
+hotbar_text = "3"
+
+[node name="btn4" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 136.0
+margin_right = 168.0
+margin_bottom = 32.0
+hotbar_text = "4"
+
+[node name="btn5" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 170.0
+margin_right = 202.0
+margin_bottom = 32.0
+hotbar_text = "5"
+
+[node name="btn6" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 204.0
+margin_right = 236.0
+margin_bottom = 32.0
+hotbar_text = "6"
+
+[node name="btn7" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 238.0
+margin_right = 270.0
+margin_bottom = 32.0
+hotbar_text = "7"
+
+[node name="btn8" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 272.0
+margin_right = 304.0
+margin_bottom = 32.0
+hotbar_text = "8"
+
+[node name="btn9" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 306.0
+margin_right = 338.0
+margin_bottom = 32.0
+hotbar_text = "9"
+
+[node name="btn0" parent="Panel/buttons" instance=ExtResource( 3 )]
+
+margin_left = 340.0
+margin_right = 372.0
+margin_bottom = 32.0
+hotbar_text = "0"
+
+
